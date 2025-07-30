@@ -1,18 +1,16 @@
-import './App.css'
-import UserContextProvider from "./context/UserContextProvider.jsx";
-import Login from "./components/Login.jsx";
-import Profile from "./components/Profile.jsx";
+import React from "react";
+import UserProfile from "./components/UserProfile";
+import BookList from "./components/BookList";
+import AddBook from "./components/AddBook";
+import "./styles.css";
 
-function App() {
-
-
+export default function App() {
   return (
-    <UserContextProvider>
-
-    <Login/>
-      <Profile />
-    </UserContextProvider>
-  )
+      <div className="container">
+        <h1>📚 Multi-Context React App</h1>
+        <UserProfile />
+        <AddBook />
+        <BookList />
+      </div>
+  );
 }
-
-export default App

@@ -1,5 +1,5 @@
 import React from 'react';
-    import UserContext from "../context/UserContext.js";
+    import UserContext from "../context/UserContext.jsx";
 
     const styles = {
         container: {
